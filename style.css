@@ -1,0 +1,262 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+  }
+  
+  body{
+    font-family:'Poppins', sans-serif;
+    background:#f4fff4;
+    color:#1d1d1d;
+  }
+  
+  /* MENU */
+  
+  header{
+    background:#1b5e20;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+  }
+  
+  .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+  }
+  
+  .logo{
+    color:white;
+    font-size:1.5rem;
+  }
+  
+  .menu{
+    display:flex;
+    gap:25px;
+    list-style:none;
+  }
+  
+  .menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+  }
+  
+  .menu a:hover{
+    color:#c8ffb0;
+  }
+  
+  .menu-mobile{
+    display:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+  }
+  
+  /* HERO */
+  
+  .hero{
+    height:100vh;
+    background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+  }
+  
+  .hero-content h2{
+    font-size:3rem;
+    margin-bottom:20px;
+  }
+  
+  .hero-content p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.2rem;
+    margin-bottom:30px;
+  }
+  
+  .hero button{
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    background:#66bb6a;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+  }
+  
+  .hero button:hover{
+    background:#43a047;
+    transform:scale(1.05);
+  }
+  
+  /* SEÇÕES */
+  
+  section{
+    padding:90px 8%;
+  }
+  
+  .sobre h2,
+  .tecnologia h2{
+    text-align:center;
+    margin-bottom:50px;
+    color:#1b5e20;
+    font-size:2.2rem;
+  }
+  
+  /* CARDS */
+  
+  .cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+  }
+  
+  .card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+  }
+  
+  .card:hover{
+    transform:translateY(-8px);
+  }
+  
+  .card h3{
+    margin-bottom:15px;
+    color:#2e7d32;
+  }
+  
+  /* SUSTENTABILIDADE */
+  
+  .sustentabilidade{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+    background:#e8f5e9;
+  }
+  
+  .texto{
+    flex:1;
+  }
+  
+  .texto h2{
+    color:#1b5e20;
+    margin-bottom:20px;
+    font-size:2rem;
+  }
+  
+  .texto p{
+    margin-bottom:15px;
+    line-height:1.8;
+  }
+  
+  .imagem{
+    flex:1;
+  }
+  
+  .imagem img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* TECNOLOGIA */
+  
+  .tecnologia-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+  }
+  
+  .tec-box{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+  }
+  
+  .tec-box:hover{
+    transform:scale(1.04);
+  }
+  
+  .tec-box span{
+    font-size:3rem;
+  }
+  
+  .tec-box h3{
+    margin:20px 0;
+    color:#2e7d32;
+  }
+  
+  /* FRASE */
+  
+  .frase{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+  }
+  
+  .frase h2{
+    font-size:2rem;
+    font-weight:600;
+  }
+  
+  /* FOOTER */
+  
+  footer{
+    background:#0d3b12;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+  }
+  
+  .creditos{
+    margin-top:15px;
+    color:#c8ffb0;
+  }
+  
+  /* RESPONSIVO */
+  
+  @media(max-width:768px){
+  
+    .menu{
+      display:none;
+    }
+  
+    .menu-mobile{
+      display:block;
+    }
+  
+    .hero-content h2{
+      font-size:2rem;
+    }
+  
+    .hero-content p{
+      font-size:1rem;
+    }
+  
+    .frase h2{
+      font-size:1.5rem;
+    }
+  
+  }
